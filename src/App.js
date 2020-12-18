@@ -1,13 +1,20 @@
-import logo from './logo.svg';
 import React, { Component } from 'react'
-import './App.css';
-
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import Header from './components/headerComponent/header'
+import HomePage from './components/pages/homePage'
+import Footer from './components/footerComponent/footer'
+import './Assets/css/default-css.scss'
 
 function App() {
   return (
     <div className='App'>
-        <h2>"Hi"</h2>
+
+      <Header />
+
+      <HomePage />
+
+      <Footer />
+
     </div>
   );
 }
