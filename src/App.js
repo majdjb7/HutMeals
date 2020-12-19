@@ -4,10 +4,11 @@ import Header from './components/headerComponent/header'
 import HomePage from './components/pages/homePage'
 import Footer from './components/footerComponent/footer'
 import './Assets/css/default-css.scss'
+import './Assets/css/homePage.scss'
 
 function App() {
   return (
-    <div className='App'>
+    <div id="App" className='App'>
 
       <Header />
 

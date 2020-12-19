@@ -8,7 +8,22 @@ class Footer extends Component {
            <footer>
 
                Footer
-               
+                <br></br>
+               Content
+                <br></br>
+               Content
+               <br></br>
+               Content
+               <br></br>
+               Content
+                <br></br>
+               Content
+               <br></br>
+               Content
+               <br></br>
+               Content
+               <br></br>
+               Content
            </footer>
         )
     }

@@ -1,9 +1,19 @@
+
+// No margins for the whole website
+* {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#App {
+    background-color: honeydew;
+}
+
 header {
-    position: relative;
+    position: absolute;
     display: block;
-    width: 100%;
-    background-color: black;
-    color: white;
+    width: 100vw;
+  //  background-color: rgb(58, 49, 1);
+    color: honeydew;
     height: 90px;
 
     .logo {
@@ -12,16 +22,16 @@ header {
     }
 
     nav, nav ul, nav ul li {
-        margin: 0;
-        padding: 0;
+      //  margin: 0;
+      //  padding: 0;
     }
 
     nav {
         position: absolute;
-        top: 50%; right: 15px; 
+        top: 50%; right: 25px; 
 
         ul li {
-            list-style-type: none;
+          //  list-style-type: none;
             display: inline-block;
             margin-right: 10px;
 
@@ -31,9 +41,26 @@ header {
             }
 
             a {
-                font-size: 19px;
+                display: inline-block;
+            }
+
+            #Signin {
+                font-size: 22px;
                 line-height: normal;
-                color: white;
+                color: honeydew;
+                text-decoration:none;
+                padding: 60px;
+
+            }
+            #Signup {
+                font-size: 22px;
+                line-height: normal;
+                background: honeydew;
+                color: black;
+                border-radius: 40px;
+                text-decoration:none;
+                padding: 60px;
+
             }
 
         }
@@ -41,17 +68,4 @@ header {
 
         
    
-
-}
-
-
-
-
-
-ul li .last {
-    margin: 0;
-}
-
-ul li a {
-    text-decoration: none;
 }
