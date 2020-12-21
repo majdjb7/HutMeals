@@ -18,54 +18,60 @@ header {
 
     .logo {
         position: absolute;
-        top: 50%; left: 15px;
+        top: 50%; left: 30px;
+        font-size: 20px;
+        background-color: honeydew;
+        color: maroon;
     }
 
-    nav, nav ul, nav ul li {
-      //  margin: 0;
-      //  padding: 0;
-    }
-
-    nav {
+    .btn {
         position: absolute;
-        top: 50%; right: 25px; 
-
-        ul li {
-          //  list-style-type: none;
-            display: inline-block;
-            margin-right: 10px;
-
-            
-            &.last {
-                margin: 0;
-            }
-
-            a {
-                display: inline-block;
-            }
-
-            #Signin {
-                font-size: 22px;
-                line-height: normal;
-                color: honeydew;
-                text-decoration:none;
-                padding: 60px;
-
-            }
-            #Signup {
-                font-size: 22px;
-                line-height: normal;
-                background: honeydew;
-                color: black;
-                border-radius: 40px;
-                text-decoration:none;
-                padding: 60px;
-
-            }
-
-        }
+        top: 50%; right: 400px;
+        background-color: honeydew;
+        color:maroon;
+        overflow: hidden;
+        border: none; /* Remove borders */
+        padding: 12px 16px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        height: 30px; 
+        width: 150px;
+    }
+    .btn:hover {
+        background-color: #111;
     }
 
-        
-   
+    .btn2 {
+        position: absolute;
+        top: 50%; right: 150px;
+        background-color: honeydew;
+        color:maroon;
+        overflow: hidden;
+        border: none; /* Remove borders */
+        padding: 12px 16px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        height: 30px; 
+        width: 90px;
+    }
+    .btn2:hover {
+        background-color: #111;
+    }
+
+    .btn3 {
+        position: absolute;
+        top: 50%; right: 50px;
+        background-color: honeydew;
+        color:maroon;
+        overflow: hidden;
+        border: none; /* Remove borders */
+        padding: 12px 16px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        height: 30px; 
+        width: 90px;
+    }
+    .btn3:hover {
+        background-color: #111;
+    }
 }
