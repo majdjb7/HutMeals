@@ -1,24 +1,26 @@
-import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
-import Header from './components/headerComponent/header'
-import HomePage from './components/pages/homePage'
-import Footer from './components/footerComponent/footer'
-import './Assets/css/default-css.scss'
-import './Assets/css/homePage.scss'
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.css';
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Business from './components/pages/Business';
+import Products from './components/pages/Products';
+import SignUp from './components/pages/SignUp';
 
 function App() {
   return (
-    <div id="App" className='App'>
-
-      <Header />
-
-      <HomePage />
-
-      <Footer />
-
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/business' component={Business} />
+          <Route path='/products' component={Products} />
+          <Route path='/sign-up' component={SignUp} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
 export default App;
-
