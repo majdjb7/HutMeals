@@ -87,14 +87,8 @@ export default function Business() {
                       className="form-control"
                       name="busninessType"
                     >
-                      <option>Electronics</option>
-                      <option>Food</option>
-                      <option>Clothing</option>
-                      <option>Beauty</option>
-                      <option>Educational</option>
-                      <option>Fitness</option>
-                      <option>Home & Living</option>
-                      <option>Other</option>
+                      <option>Restaurant</option>
+                      <option>Chef</option>
                     </select>
                   </div>
                   <div className="form-group col-md-12">
@@ -113,7 +107,7 @@ export default function Business() {
                     <input
                       type="text"
                       name="itemUrl"
-                      placeholder="Image Url"
+                      placeholder="Menu Items"
                       className="form-control"
                       type="text"
                     />
@@ -148,6 +142,7 @@ export default function Business() {
   
                 <div className="form-row">
                   <input type="submit" className="btn btn-danger" value="Submit" />
+
                 </div>
               </form>
             </div>

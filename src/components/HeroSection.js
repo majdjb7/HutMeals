@@ -34,7 +34,7 @@ function HeroSection() {
             
             <div class="d-flex justify-content-center h-100">
               <div class="searchbar">
-                <input class="search_input" type="text" name="" placeholder="Search..."></input>
+                <input class="search_input" type="text" name="" placeholder="Enter Your Address"></input>
                 <a href="#" class="search_icon"><i class="fas fa-paper-plane"></i></a>
               </div>
             </div>

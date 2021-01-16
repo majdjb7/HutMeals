@@ -21,7 +21,8 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Sign Up</Button>
+            <a href="/sign-up" class="btn btn-light" role="button">Sign Up</a>
+            {/* <Button buttonStyle='btn--outline--primary'>Sign Up</Button> */}
           </form>
         </div>
       </section>
