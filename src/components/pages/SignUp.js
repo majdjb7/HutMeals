@@ -1,64 +1,58 @@
-import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "../contexts/AuthContext"
-import { Link, useHistory } from "react-router-dom"
+import React from 'react';
+import '../../App.css';
+//import Register from './Register.html';
 
-export default function Signup() {
-  const emailRef = useRef()
-  const passwordRef = useRef()
-  const passwordConfirmRef = useRef()
-  const { signup } = useAuth()
-  const [error, setError] = useState("")
-  const [loading, setLoading] = useState(false)
-  const history = useHistory()
+export default function SignUp() {
 
-  async function handleSubmit(e) {
-    e.preventDefault()
-
-    if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
-    }
-
-    try {
-      setError("")
-      setLoading(true)
-      await signup(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
-    } catch {
-      setError("Failed to create an account")
-    }
-
-    setLoading(false)
-  }
-
-  return (
-    <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control type="password" ref={passwordConfirmRef} required />
-            </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
-              Sign Up
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
-        Already have an account? <Link to="/login">Log In</Link>
-      </div>
-    </>
-  )
+    return (
+      <div class ="container">
+  
+        <div class="sidenav">
+           <div class="login-main-text">
+              {/* <h2>Application<br> Login Page</h2> */}
+              <h2>Log In Page</h2>
+              <p>Login or register from here to access.</p>
+          
+        </div>
+        </div>
+  
+  <div class="main">
+  <div class="col-md-6 col-sm-12">
+     <div class="login-form">
+        <form>
+          <div class="form-group">
+            <label>User Name</label>
+            <input type="text" class="form-control" placeholder="User Name"></input>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Password"></input>
+          </div>
+           {/* <div class="form-group">
+              <label>User Name</label>
+              <input type="text" class="form-control" placeholder="User Name">
+           </div> */}
+           {/* <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Password">
+           </div> */}
+           <button type="submit" class="btn btn-primary">Login</button>
+           <button type="submit" class="btn btn-secondary">Register</button>
+        </form>
+     </div>
+  </div>
+  </div>
+  </div>
+  
+    );
 }
+
+//export default HelloWorld;
+
+/*
+export default function SignUp() {
+  return (
+    <h1 classNameName='sign-up'>Sign Up Here</h1>
+  );
+}
+*/
