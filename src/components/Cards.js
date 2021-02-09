@@ -11,13 +11,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/food-1.jpg'
-              text='Restaurant Info ......................................................................'
+              text="Eli's Breakfast ......................................................................"
               label='Breakfast'
               path='/business'
             />
             <CardItem
               src='images/food-2.jpg'
-              text='Restaurant Info ......................................................................'
+              text='Italian Pasta ......................................................................'
               label='Dinner'
               path='/business'
             />
@@ -25,19 +25,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/food-3.jpg'
-              text='Restaurant Info'
+              text='Home-Style Pancakes'
               label='Dessert'
               path='/business'
             />
             <CardItem
               src='images/food-4.jpg'
-              text='Restaurant Info'
+              text="Ben's Burgers"
               label='Burgers'
               path='/business'
             />
             <CardItem
               src='images/food-7.jpg'
-              text='Restaurant Info'
+              text='Indian Food'
               label='Eastern Style'
               path='/business'
             />
