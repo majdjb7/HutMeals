@@ -7,7 +7,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "build/hutmeals-2",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -19,9 +19,6 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "storage": {
-    "rules": "storage.rules"
   },
   "remoteconfig": {
     "template": "remoteconfig.template.json"
