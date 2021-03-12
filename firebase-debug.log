@@ -1,0 +1,70 @@
+[debug] [2021-03-12T20:49:21.045Z] ----------------------------------------------------------------------
+[debug] [2021-03-12T20:49:21.058Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-12T20:49:21.059Z] CLI Version:   9.6.1
+[debug] [2021-03-12T20:49:21.059Z] Platform:      win32
+[debug] [2021-03-12T20:49:21.060Z] Node Version:  v14.2.0
+[debug] [2021-03-12T20:49:21.065Z] Time:          Fri Mar 12 2021 22:49:21 GMT+0200 (Israel Standard Time)
+[debug] [2021-03-12T20:49:21.066Z] ----------------------------------------------------------------------
+[debug] [2021-03-12T20:49:21.066Z] 
+[debug] [2021-03-12T20:49:21.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-12T20:49:21.090Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Desktop\HutMeals
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using hutmeals-2. 
+[debug] [2021-03-12T20:49:32.300Z] > refreshing access token with scopes: []
+[debug] [2021-03-12T20:49:32.303Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-12T20:49:32.783Z] <<< HTTP RESPONSE 200 {"date":"Fri, 12 Mar 2021 20:49:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T20:49:32.825Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 [none]
+[debug] [2021-03-12T20:49:33.407Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 200
+[debug] [2021-03-12T20:49:33.407Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 {"projectId":"hutmeals-2","projectNumber":"63710729254","displayName":"HutMeals-2","name":"projects/hutmeals-2","resources":{"hostingSite":"hutmeals-2","realtimeDatabaseInstance":"hutmeals-2-default-rtdb","storageBucket":"hutmeals-2.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-03-12T20:49:33.414Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-12T20:49:33.415Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-12T20:49:33.766Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 12 Mar 2021 20:49:33 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T20:49:33.802Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/hutmeals-2/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-03-12T20:49:35.040Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 20:49:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-03-12T20:49:35.051Z] > refreshing access token with scopes: []
+[debug] [2021-03-12T20:49:35.052Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-12T20:49:35.380Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 12 Mar 2021 20:49:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T20:49:35.405Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 [none]
+[debug] [2021-03-12T20:49:35.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 200
+[debug] [2021-03-12T20:49:35.839Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hutmeals-2 {"projectId":"hutmeals-2","projectNumber":"63710729254","displayName":"HutMeals-2","name":"projects/hutmeals-2","resources":{"hostingSite":"hutmeals-2","realtimeDatabaseInstance":"hutmeals-2-default-rtdb","storageBucket":"hutmeals-2.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2021-03-12T20:49:35.840Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-12T20:49:35.840Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-12T20:49:36.124Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 12 Mar 2021 20:49:36 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T20:49:36.155Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/hutmeals-2/locations/-/instances/hutmeals-2-default-rtdb  
+ 
+[debug] [2021-03-12T20:49:36.815Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 20:49:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
